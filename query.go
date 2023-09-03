@@ -76,12 +76,11 @@ func GetInt(db *sql.DB, sqlQuery string) (int, error) {
 	}
 	defer res.Close()
 
-	for res.Next() {
-		err := res.Scan(&v)
-		if err != nil {
-			return v, err
-		}
-		break
+	res.Next()
+	err = res.Scan(&v)
+	if err != nil {
+		return v, err
 	}
+
 	return v, nil
 }

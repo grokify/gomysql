@@ -6,8 +6,8 @@ It writes to `STDOUT` which can be piped to a file.
 
 ## Installation
 
-`go install github.com/grokfiy/mysqlvars`
+`% go install github.com/grokify/mysqlvars@latest`
 
 ## Usage
 
-`mysqlvars -h <host> -P <port> -u <username> -p <password>`
+`% mysqlvars -h <host> -P <port> -u <username> -p <password>`

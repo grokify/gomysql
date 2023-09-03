@@ -4,10 +4,17 @@
 
 It writes to `STDOUT` which can be piped to a file.
 
-## Installation
+## CLI Installation && Usage
 
-`% go install github.com/grokify/mysqlvars@latest`
+```
+% go install github.com/grokify/mysqlvars@latest
+% mysqlvars -h <host> -P <port> -u <username> -p <password>
+```
 
-## Usage
+## Script Installation && Usage
 
-`% mysqlvars -h <host> -P <port> -u <username> -p <password>`
+```
+% git clone https://github.com/grokify/mysqlvars
+% cd mysqlvars
+% go run main.go -h <host> -P <port> -u <username> -p <password>
+```

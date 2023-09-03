@@ -4,14 +4,14 @@
 
 It writes to `STDOUT` which can be piped to a file.
 
-## CLI Installation && Usage
+## CLI Installation and Usage
 
 ```
 % go install github.com/grokify/mysqlvars@latest
 % mysqlvars -h <host> -P <port> -u <username> -p <password>
 ```
 
-## Script Installation && Usage
+## Script Installation and Usage
 
 ```
 % git clone https://github.com/grokify/mysqlvars

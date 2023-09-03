@@ -8,7 +8,7 @@ import (
 	"strconv"
 
 	"github.com/go-sql-driver/mysql"
-	gomysql "github.com/grokify/mysqlvars"
+	"github.com/grokify/gomysql"
 )
 
 func main() {

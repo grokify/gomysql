@@ -1,4 +1,4 @@
-package main
+package gomysql
 
 import (
 	"database/sql"
@@ -78,7 +78,6 @@ func GetInt(db *sql.DB, sqlQuery string) (int, error) {
 	defer res.Close()
 
 	for res.Next() {
-		var v Variable
 		err := res.Scan(&v)
 		if err != nil {
 			return v, err

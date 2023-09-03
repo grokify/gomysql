@@ -1,4 +1,2 @@
 github.com/go-sql-driver/mysql v1.7.1 h1:lUIinVbN1DY0xBg0eMOzmmtGoHwWBbvnWubQUrtU8EI=
 github.com/go-sql-driver/mysql v1.7.1/go.mod h1:OXbVy3sEdcQ2Doequ6Z5BW6fXNQTmx+9S1MCJN5yJMI=
-github.com/grokify/mysqlvars v0.1.0 h1:Bj+t4Kh+ayFnR6lER+cu0MEP1Y3c5PmUhLAtuBeXDxY=
-github.com/grokify/mysqlvars v0.1.0/go.mod h1:gXqjUaSTMQTVDtBmYwJhz1Y4bOZDmtwGvrfDn458T3c=

@@ -1,8 +1,6 @@
 # GoMySQL
 
-`mysqlvars` is a simple CLI app to dump the contents of `SHOW VARIABLES` for MySQL.
-
-It writes to `STDOUT` which can be piped to a file.
+GoMySQL is a Go module that includes various helpers for MySQL, including `mysqlvars`, is a simple CLI app to dump the contents of `SHOW VARIABLES` for MySQL. It writes to `STDOUT` which can be piped to a file.
 
 ## CLI Installation and Usage
 

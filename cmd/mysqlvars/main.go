@@ -31,7 +31,6 @@ func main() {
 		panic(err)
 	}
 	fmt.Println(ver)
-
 }
 
 func DSN() string {

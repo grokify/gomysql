@@ -15,13 +15,12 @@ func QueryVersion(db *sql.DB) (string, error) {
 	defer res.Close()
 
 	var ver string
-	for res.Next() {
-		err := res.Scan(&ver)
-		if err != nil {
-			return "", err
-		}
-		break
+	res.Next()
+	err = res.Scan(&ver)
+	if err != nil {
+		return "", err
 	}
+
 	return strings.TrimSpace(ver), nil
 }
 

@@ -1,6 +1,6 @@
 # MySQLVars
 
-`mysqlvars` is a simple CLI app to dump the contentes of `SHOW VARIABLES` for MySQL.
+`mysqlvars` is a simple CLI app to dump the contents of `SHOW VARIABLES` for MySQL.
 
 It writes to `STDOUT` which can be piped to a file.
 

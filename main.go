@@ -83,8 +83,7 @@ func (vars Variables) Rows() [][]string {
 
 func (vars Variables) WriteCSV(w io.Writer) error {
 	csvw := csv.NewWriter(w)
-	csvw.WriteAll(vars.Rows())
-	err := csvw.Error()
+	err := csvw.WriteAll(vars.Rows())
 	if err != nil {
 		return err
 	}

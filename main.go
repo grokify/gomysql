@@ -3,11 +3,10 @@ package main
 import (
 	"database/sql"
 	"encoding/csv"
+	"flag"
 	"io"
 	"os"
 	"strconv"
-
-	"flag"
 
 	"github.com/go-sql-driver/mysql"
 )

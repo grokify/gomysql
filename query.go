@@ -22,6 +22,23 @@ func QueryVersion(db *sql.DB) (string, error) {
 	return strings.TrimSpace(ver), nil
 }
 
+func Query(db *sql.DB, qry string) (string, error) {
+	res, err := db.Query(qry)
+	if err != nil {
+		return "", err
+	}
+	defer res.Close()
+
+	var ver string
+	res.Next()
+	err = res.Scan(&ver)
+	if err != nil {
+		return "", err
+	}
+
+	return strings.TrimSpace(ver), nil
+}
+
 func QueryVariables(db *sql.DB) (Variables, error) {
 	vars := Variables{}
 	res, err := db.Query("SHOW VARIABLES")
